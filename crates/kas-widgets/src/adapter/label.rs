@@ -88,7 +88,7 @@ impl<W: Widget, D: Directional> Layout for WithLabel<W, D> {
         self.label_pos = rect.pos;
         self.label.update_env(|env| {
             env.set_bounds(rect.size.into());
-            env.set_align(align.unwrap_or(Align::Default, Align::Centre));
+            env.set_align(align.unwrap_or(Align::Default, Align::Center));
         });
     }
 

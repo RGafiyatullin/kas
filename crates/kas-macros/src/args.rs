@@ -345,7 +345,7 @@ impl WidgetAttrArgs {
             ident if horiz && ident == "left" => quote! { ::kas::layout::Align::TL },
             ident if !horiz && ident == "top" => quote! { ::kas::layout::Align::TL },
             ident if ident == "centre" || ident == "center" => {
-                quote! { ::kas::layout::Align::Centre }
+                quote! { ::kas::layout::Align::Center }
             }
             ident if horiz && ident == "right" => quote! { ::kas::layout::Align::BR },
             ident if !horiz && ident == "bottom" => quote! { ::kas::layout::Align::BR },

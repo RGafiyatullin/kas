@@ -251,7 +251,7 @@ impl SpriteDisplay {
             AspectScaling::Free => rect.size,
         };
         align
-            .complete(Align::Centre, Align::Centre)
+            .complete(Align::Center, Align::Center)
             .aligned_rect(ideal, rect)
     }
 }

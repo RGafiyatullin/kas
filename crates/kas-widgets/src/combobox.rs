@@ -61,7 +61,7 @@ impl<M: 'static> kas::Layout for ComboBox<M> {
         self.core.rect = rect;
         self.label.update_env(|env| {
             env.set_bounds(rect.size.into());
-            env.set_align(align.unwrap_or(Align::Centre, Align::Centre));
+            env.set_align(align.unwrap_or(Align::Center, Align::Center));
         });
     }
 

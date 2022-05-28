@@ -261,7 +261,7 @@ impl<RT: RowTemp, CT: RowTemp, S: GridStorage> GridSetter<RT, CT, S> {
                 target = max_size;
                 w_offsets.as_mut()[0] = match align {
                     Align::Default | Align::TL | Align::Stretch => 0,
-                    Align::Centre => extra / 2,
+                    Align::Center => extra / 2,
                     Align::BR => extra,
                 };
             }
@@ -287,7 +287,7 @@ impl<RT: RowTemp, CT: RowTemp, S: GridStorage> GridSetter<RT, CT, S> {
                 target = max_size;
                 h_offsets.as_mut()[0] = match align {
                     Align::Default | Align::TL | Align::Stretch => 0,
-                    Align::Centre => extra / 2,
+                    Align::Center => extra / 2,
                     Align::BR => extra,
                 };
             }

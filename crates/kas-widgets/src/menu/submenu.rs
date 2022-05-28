@@ -122,7 +122,7 @@ impl<D: Directional, W: Menu> kas::Layout for SubMenu<D, W> {
         let size = rect.size - self.frame_size;
         self.label.update_env(|env| {
             env.set_bounds(size.into());
-            env.set_align(align.unwrap_or(Align::Default, Align::Centre));
+            env.set_align(align.unwrap_or(Align::Default, Align::Center));
         });
     }
 

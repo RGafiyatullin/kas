@@ -30,7 +30,7 @@ impl<T: FormattableText + 'static> Layout for Label<T> {
         self.core.rect = rect;
         self.label.update_env(|env| {
             env.set_bounds(rect.size.into());
-            env.set_align(align.unwrap_or(Align::Default, Align::Centre));
+            env.set_align(align.unwrap_or(Align::Default, Align::Center));
         });
     }
 

@@ -95,7 +95,7 @@ impl<M: 'static> Layout for RadioBoxBare<M> {
 
     fn set_rect(&mut self, _: &mut Manager, rect: Rect, align: AlignHints) {
         let rect = align
-            .complete(Align::Centre, Align::Centre)
+            .complete(Align::Center, Align::Center)
             .aligned_rect(self.rect().size, rect);
         self.core.rect = rect;
     }

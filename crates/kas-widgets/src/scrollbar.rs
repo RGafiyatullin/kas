@@ -218,7 +218,7 @@ impl<D: Directional> Layout for ScrollBar<D> {
         let mut ideal_size = Size::splat(self.width);
         ideal_size.set_component(self.direction, i32::MAX);
         let rect = align
-            .complete(Align::Centre, Align::Centre)
+            .complete(Align::Center, Align::Center)
             .aligned_rect(ideal_size, rect);
         self.core.rect = rect;
         self.handle.set_rect(mgr, rect, align);

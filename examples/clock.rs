@@ -147,7 +147,7 @@ impl Handler for Clock {
 impl Clock {
     fn new() -> Self {
         let env = kas::text::Environment {
-            align: (Align::Centre, Align::Centre),
+            align: (Align::Center, Align::Center),
             dpp: 1.0,
             ..Default::default()
         };
